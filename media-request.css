@@ -1,0 +1,165 @@
+@media screen and (max-width: 1250px)
+{
+	.content
+	{
+	    width: 68%;
+	    left: calc(50% - 34%);
+	}
+
+	.sliders
+	{
+	    width: 68%;
+	    left: calc(50% - 34%);
+	}
+
+	header .header-logo
+	{
+		left: calc(23% - 80px);
+	}
+
+	header .header-menu-links
+	{
+		right: 18%;
+	}
+}
+
+@media screen and (max-width: 1100px)
+{
+	.content
+	{
+	    width: 74%;
+    	left: calc(50% - 38%);
+	}
+
+	.sliders
+	{
+	    width: 74%;
+    	left: calc(50% - 38%);
+	}
+
+	header .header-logo
+	{
+	    left: calc(20% - 70px);
+	}
+
+	header .header-menu-links
+	{
+		right: 15%;
+	}
+}
+
+@media screen and (max-width: 1050px)
+{
+	.content
+	{
+	    width: 74%;
+    	left: calc(50% - 38%);
+	}
+
+	.sliders
+	{
+	    width: 74%;
+    	left: calc(50% - 38%);
+	}
+}
+
+@media screen and (max-width: 950px)
+{
+	.content
+	{
+	    width: 82%;
+	    left: calc(50% - 41.5%);
+	}
+
+	.sliders
+	{
+	    width: 82%;
+    	left: calc(50% - 41.5%);
+	}
+}
+
+@media screen and (max-width: 820px)
+{
+	#footer-coded-by
+	{
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	header .header-menu-links
+	{
+		right: 5%;
+	}
+
+	.content
+	{
+    	left: 0;
+    	border: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.sliders
+	{
+    	left: 0;
+		width: calc(100% - 7px);
+	}
+
+	.content .main-content
+	{
+		width: calc(100% - 4px);
+	}
+
+	.sidebar-div
+	{
+		display: none;
+	}
+
+	.sidebar-fade-div
+	{
+		width: 50%;
+		display: block;
+		transition: 1s;
+		right: calc(-50% - 12px);
+	}
+
+	.content .sidebar
+	{
+		right: 0;
+	    width: 100%;
+	    z-index: 2;
+	    margin-left: 0;
+	    position: absolute;
+	    padding-left: 10px;
+	    padding-bottom: 10px;
+	    background-color: #050c03cf;
+	    border-left: 2px solid #85B476;
+	    border-bottom: 2px solid #85B476;
+	}
+
+	.image-container img
+	{
+	    width: 80%;
+    	left: 10%;
+	}
+
+}
+
+@media screen and (max-width: 625px)
+{
+	.image-container img
+	{
+	    width: 100%;
+    	left: 0%;
+	}
+}
+
+@media screen and (max-width: 490px)
+{
+	#footer-coded-by-link-info
+	{
+    	left: -10.5em;
+	}
+}

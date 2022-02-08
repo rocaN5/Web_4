@@ -1,0 +1,630 @@
+ /* ••• Default settings ••• */
+*
+{
+	font-family: Arial;
+}
+
+body
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-image: url("img/main-content/bg-tile.gif");
+}
+/* ••• Default settings END •••*/
+
+/* ••• Fonts adding ••• */
+
+@font-face
+{
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Corporate-Regualr";
+    src: url("fonts/Corporate S SC Regular.otf") format("truetype");
+}
+
+/* ••• Fonts adding END ••• */
+
+/* ••• Custom scrollbar ••• */
+
+::-webkit-scrollbar 
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    box-shadow: inset 0 0 1px 1px #5C6670;
+    background: linear-gradient(#e8e8e8, #cecece);
+    background: -o-linear-gradient(#e8e8e8, #cecece);
+    background: -webkit-linear-gradient(#e8e8e8, #cecece);
+}
+
+::-webkit-scrollbar-track 
+{
+    background: #eee;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: linear-gradient(#ffffff, #e6e6e6);
+    background: -o-linear-gradient(#ffffff, #e6e6e6);
+    background: -webkit-linear-gradient(#ffffff, #e6e6e6);
+}
+
+::-webkit-scrollbar-button:vertical 
+{
+    background: #e8e8e8;
+    border: 1px solid #5C6670;
+    background-size: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: -2.5px 2px;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+    background-image: url(img/web-stuff/arrow-up-scroll.png);
+}
+
+::-webkit-scrollbar-button:vertical:hover
+{
+    background: #ffffff;
+    border: 1px solid #5C6670;
+    background-size: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: -2.5px 2px;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+    background-image: url(img/web-stuff/arrow-up-scroll.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment 
+{
+    background: #e8e8e8;
+    border: 1px solid #5C6670;
+    background-size: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: -2.5px 2px;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+    background-image: url(img/web-stuff/arrow-down-scroll.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover
+{
+    background: #ffffff;
+    border: 1px solid #5C6670;
+    background-size: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: -2.5px 2px;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+    background-image: url(img/web-stuff/arrow-down-scroll.png);
+}
+
+/* ••• Custom scrollbar END ••• */
+
+.sidebar-call-black-screen
+{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none; /* ○○○ Changing value to "block" ○○○ */
+    transition: 1s;
+    position: fixed;
+    background-color: #0000009c;
+}
+
+.sidebar-div
+{
+    width: 40%;
+    overflow: hidden;
+}
+
+.sidebar-fade-div
+{
+    width: 40%;
+    right: -36%;
+    z-index: 10;
+    height: 75%;
+    display: none;
+    position: absolute;
+}
+
+.sidebar-fade-button
+{
+    z-index: 2;
+    left: -97px;
+    color: white;
+    width: 160px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Arial;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 50px);
+    transform: rotate(-90deg);
+    background-color: #85B476;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* ••• Header ••• */
+
+header
+{
+	top: 0;
+    width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: #292929;
+}
+
+header .header-logo
+{
+    top: 30%;
+    margin: 0px;
+    width: 87px;
+    height: 35px;
+    display: block;
+    position: relative;
+    left: calc(23% - 43.5px);
+    background-image: url(img/header/logo.jpg);
+}
+
+header .header-logo:hover
+{
+    top: 31.5%;
+}
+
+header .header-menu-links
+{
+    top: 2.5em;
+    right: 22%;
+    display: flex;
+    position: absolute;
+}
+
+header .header-menu-links a
+{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    user-select: none;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+header .header-menu-links a:hover
+{
+    border-bottom: 1px solid;
+}
+
+header .header-menu-links a:active
+{
+    color: #dfdfdf;
+    border-bottom: 1px dotted;
+}
+
+header .header-menu-links a:last-child
+{
+    margin-right: 0;
+}
+
+/* ••• Header END •••*/
+
+/* ••• Content ••• */
+
+.content
+{
+    margin: 0;
+    width: 62%;
+    display: flex;
+    position: relative;
+    left: calc(50% - 31%);
+    border-left: 3px solid #F0F0F0;
+    border-right: 3px solid #F0F0F0;
+}
+
+/* ••• Content END ••• */
+
+/* ••• Main Content •••*/
+
+.content .main-content
+{
+    width: 60%;
+    display: block;
+    position: relative;
+}
+
+.content-box
+{
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+
+.main-content-image-box
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.content-box-image
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.content-box-image-description
+{
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    display: none;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 15px;
+    position: absolute;
+    padding-bottom: 10px;
+    transform: translateY(0px);
+    background-color: #0000008c;
+    animation: imgdesc 1s;
+}
+
+.main-content-image-box:hover .content-box-image-description
+{
+    display: block;
+}
+
+@keyframes imgdesc
+{
+    0%
+    {
+        transform: translateY(35px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.main-content-text-box
+{
+    left: 2%;
+    width: 96%;
+    display: block;
+    position: relative;
+}
+
+.main-content-text-box h1
+{
+    margin: 0;
+    color: #676767;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-family: Corporate-Regualr;
+}
+
+.main-content-text-box p
+{
+    margin: 0;
+    color: #676767;
+    font-size: 14px;
+}
+
+.main-content-text-box a
+{
+    width: 120px;
+    color: #b9b9b9;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    user-select: none;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #b9b9b9;
+    padding: 5px 15px 5px 15px;
+}
+
+.main-content-text-box a:hover
+{
+    top: 1px;
+    box-shadow: 0px 8px 20px -10px #000000;
+    -webkit-box-shadow: 0px 8px 20px -10px #000000;
+}
+
+/* ••• Main Content END •••*/
+
+/* ••• Sidebar ••• */
+
+.content .sidebar
+{
+    padding-top: 50px;
+    margin-left: 26.6%;
+    position: relative;
+    width: calc(73% + 2px);
+}
+
+
+.sidebar-h1-decoration
+{
+    color: #676767;
+    font-size: 16px;
+    padding: 10px 20px;
+    position: relative;
+    font-family: monospace;
+    background-color: #f7f7f7;
+    text-transform: uppercase;
+    border-left: 3px solid #85B476;
+}
+
+.search-container
+{
+    position: relative;
+}
+
+.sidebar form
+{
+    margin-top: 20px;
+    position: relative;
+}
+
+.sidebar-input
+{
+    width: 100%;
+    height: 39px;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.categories-container
+{
+    margin-top: 40px;
+    position: relative;
+}
+
+.categories-links
+{
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 22px;
+    position: relative;
+}
+
+.categories-container a
+{
+    color: #85B476;
+    font-size: 14px;
+}
+
+.categories-container a:hover
+{
+    color: #89e46c;
+}
+
+.stay-tuned-container
+{
+    margin-top: 50px;
+    position: relative;
+}
+
+.sidebar-input-email
+{
+    height: 39px;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0px 15px;
+    width: calc(100% - 34px);
+}
+
+.image-container
+{
+    margin-top: 50px;
+    position: relative;
+}
+
+.image-container img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    border-top: 1px solid #A9A9A9;
+    border-left: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+}
+/* ••• Sidebar END •••*/
+
+/* ••• Page slider ••• */
+
+.sliders
+{
+    margin: 0;
+    width: 62%;
+    height: 62px;
+    position: relative;
+    left: calc(50% - 31%);
+    border-top: 3px solid #F0F0F0;
+    border-left: 3px solid #F0F0F0;
+    border-right: 3px solid #F0F0F0;
+}
+
+.sliders a:nth-child(1)
+{
+    margin-left: 30px;
+}
+
+.sliders a:nth-child(2)
+{
+    right: 0;
+    position: absolute;
+    margin-right: 30px;
+}
+
+.sliders a 
+{
+    top: 1.5em;
+    color: #676767;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sliders a:hover
+{
+    text-decoration: underline;
+}
+
+/* ••• Page slider END ••• */
+
+/* ••• Footer ••• */
+
+footer
+{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background-color: #F8F8F8;
+    border-top: 3px solid #F0F0F0;
+}
+
+.footer-logo
+{
+    bottom: 0px;
+    width: 87px;
+    height: 34px;
+    position: absolute;
+    left: calc(50% - 43.5px);
+    background-repeat: no-repeat;
+    background-image: url(img/footer/logo-ftr.jpg);
+}
+
+.footer-text
+{
+    width: 100%;
+    height: 100%;
+}
+
+#footer-coded-by
+{
+    margin: 0;
+    right: 15%;
+    top: 2.5em;
+    width: 232px;
+    color: black;
+    font-weight: 500;
+    position: absolute;
+}
+
+#footer-coded-by a
+{
+    color: #85B476;
+}
+
+#footer-coded-by a:hover
+{
+    color: #89e46c;
+}
+
+#footer-coded-by a:hover #footer-coded-by-link-info
+{
+    display: block;
+}
+
+#footer-coded-by-link-info
+{
+    top: -33px;
+    left: -27.5em;
+    color: black;
+    bottom: -28px;
+    display: none;
+    transition: 1s;
+    text-align: center;
+    position: absolute;
+    animation: tooltip 1.5s;
+    background-color: #d5d5d5;
+    border: 1px solid #636363;
+    padding: 20px 20px 60px 20px;
+    transform: translate(0px, 0px);
+    border-radius: 20px 20px 0px 0px;
+}
+
+@keyframes tooltip
+{
+    0%
+    {
+        transform: translate(0px, 80px);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+/* ••• Footer END ••• */
+
+/* ••• To top button ••• */
+
+#top-button
+{
+    left: 30px;
+    bottom: 30px;
+    padding: 24px;
+    outline: none;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 50%;
+    background-size: 25px;
+    border: 2px solid #292929;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    animation: arrow-animation 1s;
+    background-position: 12px 12px;
+    box-shadow: 6px 5px 20px 0px #000000;
+    -webkit-box-shadow: 6px 5px 20px 0px #000000;
+    background-image: url(img/web-stuff/arrow-up.png);
+}
+
+#top-button:hover
+{
+    left: 30px;
+    bottom: 30px;
+    padding: 24px;
+    transition: 0.5s;
+    background-size: 25px;
+    border: 2px solid white;
+    background-color: #292929;
+    background-position: 12px 12px;
+    background-image: url(img/web-stuff/arrow-up-white.png);
+}
+
+@keyframes arrow-animation
+{
+    0%
+    {
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+/* ••• To top button END ••• */
